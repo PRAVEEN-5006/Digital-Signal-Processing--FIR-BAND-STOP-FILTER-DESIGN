@@ -19,7 +19,37 @@ Step 5: Plot the magnitude spectrum with x-label and y-label with suitable title
 Step 6: Terminate the program.
 
 ## PROGRAM: 
+```
+clc; % clear screen
+clear all; % clear screen
+close all; % close all figure windows
+Wc1=input('enter the value of Wc1='); 
+Wc2=input('enter the value of Wc2='); 
+N=input('enter the value of N=');
+alpha=(N-1)/2; 
+eps=0.001;
+
+%Band Stop Filter Coefficient
+n=0:1:N-1; 
+hd=(sin(Wc1*(n-alpha+eps))+sin(pi*(n-alpha+eps))-sin(Wc2*(n-alpha+eps)))./(pi*(n-alpha+eps))
+
+%Hamming Window Sequence 
+n=0:1:N-1; 
+wh=0.54-0.46*cos((2*pi*n)/(N-1))
+hn=hd.*wh
+
+% Plot the High Pass Filter with Hamming Window Technique
+w=0:0.01:pi; 
+h=freqz(hn,1,w);
+plot(w/pi,abs(h),'blue');
+```
 
 ## OUTPUT:
+<img width="940" height="718" alt="image" src="https://github.com/user-attachments/assets/4183f403-06f4-4858-a546-657821dabe98" />
+
 
 ## RESULT:
+<img width="1256" height="1600" alt="image" src="https://github.com/user-attachments/assets/e92d7433-1bf7-48f8-94ff-7636d1c28ec3" />
+
+![WhatsApp Image 2026-03-30 at 10 39 58 AM](https://github.com/user-attachments/assets/156608b4-012f-4b98-8fe7-ecc82006cb11)
+
