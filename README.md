@@ -45,11 +45,10 @@ plot(w/pi,abs(h),'blue');
 ```
 
 ## OUTPUT:
-<img width="940" height="718" alt="image" src="https://github.com/user-attachments/assets/4183f403-06f4-4858-a546-657821dabe98" />
+<img width="695" height="626" alt="image" src="https://github.com/user-attachments/assets/cf9f6009-4d4c-4dcd-8970-64cb7ec3d949" />
 
 
 ## RESULT:
 <img width="1256" height="1600" alt="image" src="https://github.com/user-attachments/assets/e92d7433-1bf7-48f8-94ff-7636d1c28ec3" />
 
-![WhatsApp Image 2026-03-30 at 10 39 58 AM](https://github.com/user-attachments/assets/156608b4-012f-4b98-8fe7-ecc82006cb11)
 
